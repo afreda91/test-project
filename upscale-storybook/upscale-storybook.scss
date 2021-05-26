@@ -1,4 +1,6 @@
-:host-context([data-component-id="f493798e-534c-4f72-85ec-a9f5121e46fc"]){
+@import "../../styles.scss";
+
+:host-context([data-component-id = $storyBookOrderId]){
 
 	&.row-item {
 		margin-top: -100px;
@@ -22,7 +24,7 @@
 	}
 
 	::ng-deep.story.box{
-		background-color: #D3D3D3;
+		background-color: $std-gray;
 		width: auto;
 		height: auto;
 		padding: 20px 0;
@@ -46,20 +48,20 @@
 		text-align: center;
 
 		&::after{
-		color: #cc0000;
+		color: $std-red;
 		content: '>';
 		}
 	}
 }
 
-:host-context([data-component-id="7729f782-e8e5-4602-9c2a-0cde98c56746"]){
+:host-context([data-component-id=$storyClassic]){
 
 	::ng-deep.content-headline{
 		font-size: 28px !important; 
 		text-transform: capitalize;
 		font-weight: 800 !important;
 		text-align: center;
-		color:#D3D3D3 !important;
+		color:$std-gray !important;
 		margin-bottom: 20px;
 	}
 
