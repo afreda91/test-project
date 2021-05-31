@@ -1,6 +1,6 @@
-@import "../styles.scss";
+@import "../style.scss";
 
-:host-context([data-component-id = $storyBookOrderId]){
+:host-context([data-component-id = "#{$storyBookOrderId}"]){
 
 	&.row-item {
 		margin-top: -100px;
@@ -54,7 +54,7 @@
 	}
 }
 
-:host-context([data-component-id= $storyClassic]){
+:host-context([data-component-id = "#{$storyClassic}"]){
 
 	::ng-deep.content-headline{
 		font-size: 28px !important; 
@@ -86,7 +86,7 @@
 }
 
 
-:host-context([data-component-id = $hompage-pickUpOrders]){
+:host-context([data-component-id =  "#{$hompage-pickUpOrders}"]){
 	
 	::ng-deep.grid.two{
 		display: flex !important;
@@ -227,7 +227,7 @@
 }
 
 
-:host-context([data-component-id = $hompage-Fm-More]) {
+:host-context([data-component-id =  "#{$hompage-Fm-More}"]) {
 	max-width: 1100px !important;
 	margin-left: auto;
 	margin-right: auto;
