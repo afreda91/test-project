@@ -1,0 +1,139 @@
+:host-context([data-component-id =  "#{$hompage-pickUpOrders}"]){
+	
+	::ng-deep.grid.two{
+		display: flex !important;
+		justify-content: center !important;
+		gap: 0px !important;
+	}
+
+	::ng-deep.story.box {
+		padding: 58px 75px;	
+		border-radius: 15px;
+		border: solid 4px rgba(88, 89, 91, .1);
+
+		&:hover{
+			box-shadow: none;
+			background-color: rgba(88, 89, 91, .1);
+			border-color: transparent; 
+			
+			.image-aspect-ratio_1-1.storybook-article-cell-background{
+				background-color: transparent;
+				border-color: $primary-color;
+				.img{
+					transform: none !important;
+				}
+			}
+		}
+
+		&:first-of-type{
+			margin-right: 30px;
+		}
+
+		.image-aspect-ratio_1-1.storybook-article-cell-background{
+			width: fit-content;
+			height: fit-content;
+			padding: 35px;
+			background-color: $primary-color;
+			display: flex;
+			border-radius: 50%;
+			margin-right: auto;
+			margin-left: auto;
+			justify-content: center;
+			align-items: center;
+			border: solid 4px transparent;
+
+			.img{
+				position: relative;
+				width: 90px;
+				height: 90px;
+			}
+		}
+
+		.overlay{
+			position: relative !important;
+			width: 100%;
+
+			.overlay-content{
+				padding: 0 !important;
+			}
+			
+			.content-headline{
+				color: $secondary-color !important;
+				font-size: 18px !important;
+				line-height: 24px !important;
+				font-weight: normal !important;
+				margin: 35px 0px 35px 0px;
+				text-overflow: unset;
+				max-width: 200px;
+			}
+
+			.link-text.storybook-article-link-text-button.overlay-content-flex-alignment_center{
+				color: $primary-color !important;
+				font-size: 14px !important;
+  				font-weight: bold !important;
+				margin: 0 !important;
+				padding: 0 !important;
+				height: auto;
+				border: none !important;
+				background-color: transparent !important;
+				text-transform: uppercase;
+
+				&::after{
+					margin-left: 7px;
+					content: '>';
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 760px) {
+
+		::ng-deep.grid.two{
+			flex-direction: column !important;
+			align-items: center !important;
+			padding: 0 20px !important;
+		}
+
+		::ng-deep.story.box {
+			flex: 1;
+			padding: 25px;
+			margin-right: 0 !important;
+
+			.storybook-content{
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+
+				.image-aspect-ratio_1-1.storybook-article-cell-background{
+					padding: 10px;
+
+					.img{
+						width: 50px;
+						height: 50px;
+					}
+				}
+				
+				.overlay{
+					margin-left: 25px;
+
+					.content-headline, .link-text.storybook-article-link-text-button.overlay-content-flex-alignment_center {
+						font-size: 12px !important;
+						text-align: left;
+					}
+
+					.content-headline{
+						line-height: 16px !important;
+						margin: 0 !important;
+						margin-bottom: 10px !important;
+						max-width: none;
+					}
+
+					.link-text.storybook-article-link-text-button.overlay-content-flex-alignment_center {
+						display: block;
+						align-self: flex-start !important;
+					}
+				}
+			}
+		}
+	}
+}
