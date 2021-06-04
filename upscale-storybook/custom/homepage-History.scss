@@ -1,0 +1,50 @@
+:host-context([data-component-id = "#{$homepage-History}"]) {
+
+	upscale-storybook-content::ng-deep {
+
+		.storybook-article-cell-background {
+
+			&.image-aspect-ratio_1-1 {
+				width: 540px;
+				height: 400px;
+				padding-top: 0;
+
+				.img {
+					height: 400px;
+				}
+
+			}
+
+		}
+
+		::ng-deep.storybook-content {
+			flex-direction: row;
+			align-items: center;
+
+			.overlay {
+				position: relative;
+
+				.overlay-content {
+
+					.storybook-article-content-headline {
+						color: #000 !important;
+						font-size: 40px;
+						line-height: 39px;
+						margin-bottom: 13px;
+					}
+
+					.storybook-article-content-subheadline {
+						color: #58595B !important;
+						font-size: 18px;
+						line-height: 24px;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
